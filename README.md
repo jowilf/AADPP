@@ -1,2 +1,2 @@
-# AADPP
-Associate Android Developer Practice Project
+# AADPP 2020 - hounonj@gmail.com
+GADS Leaderboard Mobile Application
