@@ -1,5 +1,12 @@
 <resources>
-    <string name="app_name">AADPP</string>
+    <string name="app_name">LEADERBOARD</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="submit">Submit</string>
+    <string name="learning_hours">%d learning hours, %s.</string>
+    <string name="learning_skill">%d skill IQ Score, %s.</string>
+    <string-array name="tabBar">
+        <item>Learning Learders</item>
+        <item>Skill IQ Learders</item>
+    </string-array>
 </resources>
