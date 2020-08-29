@@ -12,7 +12,7 @@ import com.joapp.aadpp.R
 import com.joapp.aadpp.data.User
 import com.joapp.aadpp.network.ApiService
 import com.joapp.aadpp.ui.adapter.LeadersAdapter
-import kotlinx.android.synthetic.main.fragment_learning.*
+import kotlinx.android.synthetic.main.fragment_leaders.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -36,7 +36,7 @@ class LeadersFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_learning, container, false)
+        return inflater.inflate(R.layout.fragment_leaders, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -57,6 +57,7 @@ class LeadersFragment : Fragment() {
             override fun onResponse(call: Call<List<User>>, response: Response<List<User>>) {
                 if (response.isSuccessful)
                     recyclerView.adapter = LeadersAdapter(response.body() ?: listOf())
+                progressBar.visibility = View.GONE
             }
 
             override fun onFailure(call: Call<List<User>>, t: Throwable) {
@@ -70,6 +71,7 @@ class LeadersFragment : Fragment() {
             override fun onResponse(call: Call<List<User>>, response: Response<List<User>>) {
                 if (response.isSuccessful)
                     recyclerView.adapter = LeadersAdapter(response.body() ?: listOf(), FLAG_SKILL)
+                progressBar.visibility = View.GONE
             }
 
             override fun onFailure(call: Call<List<User>>, t: Throwable) {

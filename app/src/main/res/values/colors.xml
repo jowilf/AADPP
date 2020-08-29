@@ -2,9 +2,11 @@
 <resources>
     <color name="colorPrimary">@color/black</color>
     <color name="colorPrimaryDark">@color/black</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorAccent">#E88A00</color>
+    <color name="orange">#FEB722</color>
     <color name="black">#000</color>
     <color name="white">#fff</color>
-    <color name="card_title">#8C8C8C</color>
+    <color name="greyback">#FAFAFA</color>
+    <color name="card_title">#747474</color>
     <color name="card_subtitle">#A1A1A1</color>
 </resources>

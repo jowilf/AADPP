@@ -1,5 +1,6 @@
 package com.joapp.aadpp.ui.activity
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.joapp.aadpp.R
@@ -16,5 +17,8 @@ class MainActivity : AppCompatActivity() {
     fun init() {
         viewPager.adapter = PagerAdapter(supportFragmentManager, this)
         tabLayout.setupWithViewPager(viewPager)
+        submitButton.setOnClickListener {
+            startActivity(Intent(this, SubmissionActivity::class.java))
+        }
     }
 }
