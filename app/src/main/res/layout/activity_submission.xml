@@ -91,6 +91,7 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/firstName"
                     style="@style/EditTextStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -98,6 +99,7 @@
                     android:hint="@string/first_name" />
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/lastName"
                     style="@style/EditTextStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -110,6 +112,7 @@
                 android:layout_height="20dp" />
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailAdress"
                 style="@style/EditTextStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -120,6 +123,7 @@
                 android:layout_height="20dp" />
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/githubLink"
                 style="@style/EditTextStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -130,6 +134,7 @@
                 android:layout_height="40dp" />
 
             <Button
+                android:id="@+id/btnSubmit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"

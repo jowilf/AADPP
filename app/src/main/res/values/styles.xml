@@ -5,6 +5,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
     </style>
 
 
@@ -27,5 +28,11 @@
         <item name="hintTextColor">@color/card_title</item>
         <item name="android:textColor">@color/black</item>
         <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">#4DFFFFFF</item>
     </style>
 </resources>

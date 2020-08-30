@@ -6,7 +6,10 @@
     <color name="orange">#FEB722</color>
     <color name="black">#000</color>
     <color name="white">#fff</color>
+    <color name="red">#f00</color>
+    <color name="green">#00A41C</color>
     <color name="greyback">#FAFAFA</color>
     <color name="card_title">#747474</color>
     <color name="card_subtitle">#A1A1A1</color>
+    <color name="dialog_back">#31FFFFFF</color>
 </resources>

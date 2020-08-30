@@ -22,7 +22,7 @@ class LeadersFragment : Fragment() {
     @IntDef(FLAG_HOURS, FLAG_SKILL)
     annotation class LearningType
 
-    val apiService: ApiService by lazy { ApiService.create() }
+    private val apiService = ApiService.create()
     var flag = FLAG_HOURS
 
     override fun onCreate(savedInstanceState: Bundle?) {
