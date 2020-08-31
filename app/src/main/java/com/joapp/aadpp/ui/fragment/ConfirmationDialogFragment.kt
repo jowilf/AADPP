@@ -5,6 +5,9 @@ import android.content.Context
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
+import android.text.Spannable
+import android.text.SpannableString
+import android.text.style.RelativeSizeSpan
 import android.view.*
 import androidx.fragment.app.DialogFragment
 import com.joapp.aadpp.R
@@ -58,6 +61,11 @@ class ConfirmationDialogFragment : DialogFragment() {
     }
 
     fun init() {
+        val str = getString(R.string.are_you_sure)
+        val span = SpannableString(str)
+        val size = str.length
+        span.setSpan(RelativeSizeSpan(1.8f), size - 2, size, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+        textView.setText(span)
         btnYes.setOnClickListener {
             dismiss()
             mListener?.onConfirm()

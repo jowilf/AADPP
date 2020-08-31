@@ -61,7 +61,10 @@ class SubmissionActivity : AppCompatActivity(), ConfirmationDialogFragment.Confi
         ).enqueue(object : Callback<Void> {
             override fun onResponse(call: Call<Void>, response: Response<Void>) {
                 progressDialog.dismiss()
-                sucessDialog.show(supportFragmentManager, "success")
+                if (response.isSuccessful)
+                    sucessDialog.show(supportFragmentManager, "success")
+                else
+                    failureDialog.show(supportFragmentManager, "failure")
             }
 
             override fun onFailure(call: Call<Void>, t: Throwable) {

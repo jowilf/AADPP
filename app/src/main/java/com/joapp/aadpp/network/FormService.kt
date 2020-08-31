@@ -17,7 +17,7 @@ interface FormService {
         email: String,
         @Field("entry.1877115667")
         name: String,
-        @Field("entry.1877115667")
+        @Field("entry.2006916086")
         last_name: String,
         @Field("entry.284483984")
         link: String,

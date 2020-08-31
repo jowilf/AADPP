@@ -40,7 +40,7 @@
                 android:layout_height="30dp" />
 
             <TextView
-                android:id="@+id/lbl_your_name"
+                android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
